@@ -1,6 +1,7 @@
 # Todos api
 
 this api is a api with basic jwt auth with oauth2 
+which uses [Fastapi](https://fastapi.tiangolo.com/) and [Motor](https://motor.readthedocs.io/en/stable/)
 
 ## About
 
@@ -216,6 +217,15 @@ git clone <repo-name>.git
 
 ```sh
 pip install -r requirements.txt
+```
+
+### Create .env file 
+
+```sh
+MONGO_URL=mongodb://localhost:27017 #mongodb url
+SECRET_KEY=09d25e094faa6ca2556c818166b7a9563b93f7099f6f0f4caa6cf63b88e8d3e7 # secret key for token 
+ALGORITHM=HS256 # algorithm for tokenization
+ACCESS_TOKEN_EXPIRE_MINUTES=30 #time for token expire
 ```
 
 ### Run the project
